@@ -51,14 +51,37 @@ Les commandes sont générées automatiquement.
 
 ### Page Santé
 
+![Page santé](../assets/images/jailbreak_screenshot2.png "Page Santé")
+
 La page Santé est accessible depuis la page de configuration des équipements.
 Elle remonte les informations des équipement.
 
 ### Page Installation
 
-La page Installation est accessible depuis la page de configuration des équipements.
-Elle permet d'envoyer le fichier d'installation des dépendances des équipements. (tweaks et paquets dont le plugin a besoin)
+![Page Installation](../assets/images/jailbreak_screenshot1.png "Page Installation")
 
+La page Installation est accessible depuis la page de configuration des équipements.
+Elle permet d'envoyer le fichier d'installation des dépendances des équipements.
+C'est-à-dire les Tweaks et paquets dont le plugin a besoin, mais aussi les scripts servant à la commande perso.
+
+### Script commande perso
+
+![Script commande perso](../assets/images/jailbreak_screenshot3.png "Script commande perso")
+
+La commande perso permet de créer soi-même une commande personnalisée.
+* Soit en tapant directement la commande complète : *activator send abracadabra*
+* Soit en utilisant le script transféré précédemment depuis la page Installation : *bash jailed/activator_send.sh <parametre>*
+Voici la liste des paramètres :
+- low-power|power *(bascule le mode d'économie d'énergie)*
+- homebutton|home *(appuie sur le bouton home)*
+- respring *(lance un respring)*
+- sleep|veille *(appuie sur le bouton verrouillage)*
+- location *(bascule la localisation)*
+- rotation *(bascule le verrouillage de rotation d'écran)*
+- airplane-mode|airplane|avion *(bascule le mode avion)*
+  
+Si votre équipement est verrouillé, pensez à lancer la commande *unlock* avant d'envoyer la commande script perso.
+    
 ### Liste des versions
 
 *[Voir la liste des versions](changelog.md)*

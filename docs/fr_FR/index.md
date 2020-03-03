@@ -69,7 +69,7 @@ C'est-à-dire les Tweaks et paquets dont le plugin a besoin, mais aussi les scri
 
 La commande perso permet de créer soi-même une commande personnalisée.
 
-#### I) Activator (compatible iOS11/12/13test)
+#### Activator (compatible iOS11/12/13test)
 (si votre appareil est verrouillé, pensez à lancer la commande de déverrouillage avant celle-ci)
 * Soit en tapant directement la commande complète : *activator send abracadabra*
 * Soit en utilisant le script transféré précédemment depuis la page Installation : *bash jailed/activator_send.sh* *<parametre>*</br>
@@ -84,7 +84,7 @@ Voici la liste des paramètres :</br>
 Appuyez sur le bouton Safari du Dashboard (3 sur la photo ci-dessous)</br>
 ![Dashboard123](../assets/images/Dashboard123.png "Dashboard123")
 
-##### 1) Créer ses notifications personnalisées (*Activator*):
+##### Créer ses notifications personnalisées (*Activator*):
 	- Sur l'appareil, ouvrir l'app **Activator**,
 						sélectionner "Partout",
 						puis l'assigner à un évènement, (peut être réassigné une fois créé)
@@ -101,12 +101,12 @@ Appuyez sur le bouton Safari du Dashboard (3 sur la photo ci-dessous)</br>
 	(si votre appareil est verrouillé, pensez à lancer la commande de déverrouillage avant celle-ci (commande *unlock*))
 	- Mettre dans le champ commande perso : *activator send libactivator.message.show.XXX* en remplaçant XXX par l'ID récupéré.
 
-##### 2) Prendre une photo (*Activator*):
+##### Prendre une photo (*Activator*):
 	(si votre appareil est verrouillé, pensez à lancer la commande de déverrouillage avant celle-ci (commande *unlock*))
 	- Mettre dans le champ commande perso : *activator send libactivator.shortcut:com.apple.camera:"Prendre une photo" && sleep 3 && activator send libactivator.volume.down.press*
                         Celle-ci sera enregistrée dans la galerie de l'appareil.
 
-##### 3) Ouvrir une page d'accueil personnalisée (*Activator*):
+##### Ouvrir une page d'accueil personnalisée (*Activator*):
     Peut être utilisé depuis un déclenchement programmé ou provoqué sur Jeedom.
     *Exemple : ouvrir le Dashboard de Jeedom à l'ouverture de la porte d'entrée,
             ouvrir une page design de Jeedom tous les jours de la semaine à l'heure de partir au travail...*
@@ -115,14 +115,14 @@ Appuyez sur le bouton Safari du Dashboard (3 sur la photo ci-dessous)</br>
     - Appuyez sur le bouton Safari du Dashboard (3 sur la photo ci-dessous)</br>
    ![Dashboard123](../assets/images/Dashboard123.png "Dashboard123")
 
-##### 4) Utiliser votre appareil comme caméra de surveillance (*Activator*/*SimulateTouch*):
+##### Utiliser votre appareil comme caméra de surveillance (*Activator*/*SimulateTouch*):
     Utilisez votre appareil comme caméra de surveillance.
     Nécessite une Application de l'App Store (Periscope HD ou XXX).
     Nécessite un lecteur de flux RTSP (Synology, VLC...)
     (Periscode HD) - Filme dès l'ouverture de l'application.
     (IP Camera Lite) - Cliquer sur "Turn on IP Camera Server" pour filmer. *stouch touch 10 500*
 
-#### II) Raccourcis (iOS12/13)
+#### Raccourcis (iOS12/13)
 1) Sur l'application **Raccourcis**, récupérer le nom du raccourci créé/téléchargé.
 2) Sur Jededom, dans la commande perso, entrer *uiopen "shortcuts://run-shortcut?name=XXX"* en remplaçant XXX par le nom du raccourci.
 (si votre appareil est verrouillé, pensez à lancer la commande de déverrouillage avant celle-ci (commande *unlock*))

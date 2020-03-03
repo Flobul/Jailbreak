@@ -2,11 +2,12 @@
 
 Liste des versions du plugin Jailbreak.
 
-### Version 1.10 beta 1 (29/02/2020)
+### Version 1.10 (03/03/2020)
 * Action commande perso
 * Correction commandes action
 * Ajout compatibilité multiple modèle iPad/iPhone
 * Ajout d'un script activator_send.sh pour envoyer des commandes personnalisées (low-energy, respring, veille, mode avion...)
+* Ajout de la documentation pour l'utilisation de la commande perso (notifications, photo, page safari, caméra, **Raccourcis**)
 
 ### Version 1.03 (26/02/2020)
 * Masquage d'îcone si connexion KO

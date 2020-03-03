@@ -86,13 +86,13 @@ Activator (compatible iOS 11/12/13-test)
 * Soit en tapant directement la commande complète : *activator send abracadabra*
 * Soit en utilisant le script transféré précédemment depuis la page Installation : *bash jailed/activator_send.sh* *<parametre>*  
 Voici la liste des paramètres :  
-    * low-power|power *(bascule le mode d'économie d'énergie)*,  
-    * homebutton|home *(appuie sur le bouton home)*,  
-    * respring *(lance un respring)*,  
-    * sleep|veille *(appuie sur le bouton verrouillage)*,  
-    * location *(bascule la localisation)*,  
-    * rotation *(bascule le verrouillage de rotation d'écran)*,  
-    * airplane-mode|airplane|avion *(bascule le mode avion)*.  
+	low-power|power *(bascule le mode d'économie d'énergie)*,  
+	homebutton|home *(appuie sur le bouton home)*,  
+	respring *(lance un respring)*,  
+	sleep|veille *(appuie sur le bouton verrouillage)*,  
+	location *(bascule la localisation)*,  
+	rotation *(bascule le verrouillage de rotation d'écran)*,  
+	airplane-mode|airplane|avion *(bascule le mode avion)*.  
 Appuyez sur le bouton Safari du Dashboard (3 sur la photo ci-dessous)  
 ![Dashboard123](../assets/images/Dashboard123.png "Dashboard123")
 

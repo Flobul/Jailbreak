@@ -72,47 +72,47 @@ La commande perso permet de créer soi-même une commande personnalisée.
 #### Activator (compatible iOS11/12/13test)
 (si votre appareil est verrouillé, pensez à lancer la commande de déverrouillage avant celle-ci)
 * Soit en tapant directement la commande complète : *activator send abracadabra*
-* Soit en utilisant le script transféré précédemment depuis la page Installation : *bash jailed/activator_send.sh* *<parametre>*</br>
-Voici la liste des paramètres :</br>
-    * low-power|power *(bascule le mode d'économie d'énergie)*,</br>
-    * homebutton|home *(appuie sur le bouton home)*,</br>
-    * respring *(lance un respring)*,</br>
-    * sleep|veille *(appuie sur le bouton verrouillage)*,</br>
-    * location *(bascule la localisation)*,</br>
-    * rotation *(bascule le verrouillage de rotation d'écran)*,</br>
-    * airplane-mode|airplane|avion *(bascule le mode avion)*.</br>
-Appuyez sur le bouton Safari du Dashboard (3 sur la photo ci-dessous)</br>
+* Soit en utilisant le script transféré précédemment depuis la page Installation : *bash jailed/activator_send.sh* *<parametre>*  
+Voici la liste des paramètres :  
+    * low-power|power *(bascule le mode d'économie d'énergie)*,  
+    * homebutton|home *(appuie sur le bouton home)*,  
+    * respring *(lance un respring)*,  
+    * sleep|veille *(appuie sur le bouton verrouillage)*,  
+    * location *(bascule la localisation)*,  
+    * rotation *(bascule le verrouillage de rotation d'écran)*,  
+    * airplane-mode|airplane|avion *(bascule le mode avion)*.  
+Appuyez sur le bouton Safari du Dashboard (3 sur la photo ci-dessous)  
 ![Dashboard123](../assets/images/Dashboard123.png "Dashboard123")
 
 ##### Créer ses notifications personnalisées (*Activator*):
 	- Sur l'appareil, ouvrir l'app **Activator**,
-						sélectionner "Partout",
-						puis l'assigner à un évènement, (peut être réassigné une fois créé)
-						cliquer sur "Build",
-						puis "Show message alert",
-						entrer votre "Titre" et "Message personalisé" et "Enregistrer" puis "OK".
+			sélectionner "Partout",
+			puis l'assigner à un évènement, (peut être réassigné une fois créé)
+			cliquer sur "Build",
+			puis "Show message alert",
+			entrer votre "Titre" et "Message personalisé" et "Enregistrer" puis "OK".
 	- Il faut maintenant identifier le message créé pour récupérer son ID.
-                        (méthode 1) Se connecter en SSH à l'appareil et entrer dans l'invite de commande *activator listeners | grep message.show*. Si un seul message, récupérer son ID. Si plusieurs messages enregistrés : *activator get LAMessageListeners*
-                        (méthode 2) Activer les logs Debug du plugin Jailbreak dans Jeedom.
-                        Saisir ce code dans le champ commande perso sur l'équipement *activator get LAMessageListeners*,
-                        Sauvegarder, et Tester.
-                        Dans les log générés, récupérer l'ID du/des messages à la fin de la ligne : *[2020-01-01 12:00:00][DEBUG] : Sortie action perso :*
-                        Récupérer la chaine ID qui suit "...message.show.XXX"
+			(méthode 1) Se connecter en SSH à l'appareil et entrer dans l'invite de commande *activator listeners | grep message.show*. Si un seul message, récupérer son ID. Si plusieurs messages enregistrés : *activator get LAMessageListeners*
+			(méthode 2) Activer les logs Debug du plugin Jailbreak dans Jeedom.
+			Saisir ce code dans le champ commande perso sur l'équipement *activator get LAMessageListeners*,
+			Sauvegarder, et Tester.
+			Dans les log générés, récupérer l'ID du/des messages à la fin de la ligne : *[2020-01-01 12:00:00][DEBUG] : Sortie action perso :*
+			Récupérer la chaine ID qui suit "...message.show.XXX"
 	(si votre appareil est verrouillé, pensez à lancer la commande de déverrouillage avant celle-ci (commande *unlock*))
 	- Mettre dans le champ commande perso : *activator send libactivator.message.show.XXX* en remplaçant XXX par l'ID récupéré.
 
 ##### Prendre une photo (*Activator*):
 	(si votre appareil est verrouillé, pensez à lancer la commande de déverrouillage avant celle-ci (commande *unlock*))
 	- Mettre dans le champ commande perso : *activator send libactivator.shortcut:com.apple.camera:"Prendre une photo" && sleep 3 && activator send libactivator.volume.down.press*
-                        Celle-ci sera enregistrée dans la galerie de l'appareil.
+			Celle-ci sera enregistrée dans la galerie de l'appareil.
 
 ##### Ouvrir une page d'accueil personnalisée (*Activator*):
     Peut être utilisé depuis un déclenchement programmé ou provoqué sur Jeedom.
     *Exemple : ouvrir le Dashboard de Jeedom à l'ouverture de la porte d'entrée,
             ouvrir une page design de Jeedom tous les jours de la semaine à l'heure de partir au travail...*
     - Sur l'appareil, ouvrir Safari et aller sur la page désirée (Dashboard/Design de Jeedom...),
-					    cliquer sur le bouton partager, puis "Sur l'écran d'accueil", enfin "Ajouter",
-    - Appuyez sur le bouton Safari du Dashboard (3 sur la photo ci-dessous)</br>
+			cliquer sur le bouton partager, puis "Sur l'écran d'accueil", enfin "Ajouter",
+    - Appuyez sur le bouton Safari du Dashboard (3 sur la photo ci-dessous)  
    ![Dashboard123](../assets/images/Dashboard123.png "Dashboard123")
 
 ##### Utiliser votre appareil comme caméra de surveillance (*Activator*/*SimulateTouch*):

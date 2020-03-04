@@ -83,6 +83,7 @@ Activator (compatible iOS 11/12/13-test)
 ---------------------------------------
 
 > (si votre appareil est verrouillé, pensez à lancer la commande de déverrouillage avant celle-ci)
+
 * Soit en tapant directement la commande complète : *activator send abracadabra*
 * Soit en utilisant le script transféré précédemment depuis la page Installation : ```bash jailed/activator_send.sh* *<parametre>*```  
 Voici la liste des paramètres :  
@@ -107,6 +108,7 @@ Créer ses notifications personnalisées (*Activator*)
 - Il faut maintenant identifier le message créé pour récupérer son ID.  
 	(méthode 1) Se connecter en SSH à l'appareil et entrer dans l'invite de commande ```activator listeners | grep message.show```.  
 	Si un seul message, récupérer son ID. Si plusieurs messages enregistrés : ```activator get LAMessageListeners```  
+	
 	(méthode 2) Activer les logs Debug du plugin Jailbreak dans Jeedom.  
 	Saisir ce code dans le champ commande perso sur l'équipement ```activator get LAMessageListeners```,  
 	Sauvegarder, et Tester.  
@@ -114,11 +116,13 @@ Créer ses notifications personnalisées (*Activator*)
 	Récupérer la chaine ID qui suit ```...message.show.XXX```  
 
 > (si votre appareil est verrouillé, pensez à lancer la commande de déverrouillage avant celle-ci (commande *unlock*))
+
 - Mettre dans le champ commande perso : ```activator send libactivator.message.show.XXX``` en remplaçant XXX par l'ID récupéré.
 
 Prendre une photo (*Activator*)
 -------------------------------
 > (si votre appareil est verrouillé, pensez à lancer la commande de déverrouillage avant celle-ci (commande *unlock*))
+
 - Mettre dans le champ commande perso : ```activator send libactivator.shortcut:com.apple.camera:"Prendre une photo" && sleep 3 && activator send libactivator.volume.down.press```  
 	Celle-ci sera enregistrée dans la galerie de l'appareil.
 
@@ -145,7 +149,7 @@ Raccourcis (iOS12/13)
 1) Sur l'application **Raccourcis**, récupérer le nom du raccourci créé/téléchargé.  
 2) Sur Jeedom, dans la commande perso, entrer ```uiopen "shortcuts://run-shortcut?name=XXX"``` en remplaçant XXX par le nom du raccourci.  
 > (si votre appareil est verrouillé, pensez à lancer la commande de déverrouillage avant celle-ci (commande ```unlock```))
-    
+
 Liste des versions
 ==================
 

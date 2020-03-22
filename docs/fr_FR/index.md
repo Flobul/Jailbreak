@@ -16,7 +16,8 @@ Ce plugin permet de récupérer les informations et commander les équipements A
 - envoyer une notification,
 - lancer des applications à distance,
 - lancer des raccourcis à distance,
-- filmer et envoyer le flux caméra en RTSP.
+- filmer et envoyer le flux caméra en RTSP,
+- tester les tweaks, voir les processus actifs...
 
 **Modèles compatibles**
 -----------------------
@@ -72,6 +73,10 @@ La page Installation est accessible depuis la page de configuration des équipem
 Elle permet d'envoyer le fichier d'installation des dépendances des équipements.
 C'est-à-dire les Tweaks et paquets dont le plugin a besoin, mais aussi les scripts servant à la commande perso.
 
+![Tab Test/Compatibilité](../assets/images/jailbreak_screenshot4.png "Tab Test/Compatibilité")
+
+Le tab Test/Compatibilié dans la page Installation permet de tester la connexion SSH, vérifier la présence des Tweaks installés précédemment, lister les arguments possible pour Activator (script perso), et afficher les processus actifs (debug).
+
 Script commande perso
 =====================
 
@@ -108,11 +113,11 @@ Créer ses notifications personnalisées (*Activator*)
 - Il faut maintenant identifier le message créé pour récupérer son ID.  
 	(méthode 1) Se connecter en SSH à l'appareil et entrer dans l'invite de commande ```activator listeners | grep message.show```.  
 	Si un seul message, récupérer son ID. Si plusieurs messages enregistrés : ```activator get LAMessageListeners```  
-	
+
 	(méthode 2) Activer les logs Debug du plugin Jailbreak dans Jeedom.  
 	Saisir ce code dans le champ commande perso sur l'équipement ```activator get LAMessageListeners```,  
 	Sauvegarder, et Tester.  
-	Dans les log générés, récupérer l'ID du/des messages à la fin de la ligne : ```[2020-01-01 12:00:00][DEBUG] : Sortie action perso :``` 
+	Dans les log générés, récupérer l'ID du/des messages à la fin de la ligne : ```[2020-01-01 12:00:00][DEBUG] : Sortie action perso :```
 	Récupérer la chaine ID qui suit ```...message.show.XXX```  
 
 > (si votre appareil est verrouillé, pensez à lancer la commande de déverrouillage avant celle-ci (commande *unlock*))  

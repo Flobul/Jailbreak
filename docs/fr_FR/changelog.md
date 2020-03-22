@@ -3,6 +3,12 @@ Changelog
 
 Liste des versions du plugin Jailbreak.
 
+Version 1.11 (22/03/2020)
+-------------------------
+* Correction lastupdate page Installation
+* Ajout tab Test dans Installation (test de tweaks et processus actifs...)
+* Ajout d'une commande d'info Batterie/Secteur
+
 Version 1.10 (03/03/2020)
 -------------------------
 * Action commande perso

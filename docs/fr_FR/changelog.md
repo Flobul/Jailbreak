@@ -3,6 +3,13 @@ Changelog
 
 Liste des versions du plugin Jailbreak.
 
+Version 1.20 (07/04/2020)
+-------------------------
+* Ajout 1 commande perso + 2 info perso
+* Allègement des commandes envoyées sur les équipements (économie batterie) 
+* Correction bug page Santé
+* Correction date de dernière communication
+
 Version 1.11 (22/03/2020)
 -------------------------
 * Correction lastupdate page Installation

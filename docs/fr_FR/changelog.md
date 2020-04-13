@@ -3,10 +3,19 @@ Changelog
 
 Liste des versions du plugin Jailbreak.
 
-Version 1.20 (07/04/2020)
+Version 1.13 (13/04/2020) beta
+-------------------------
+* Nouvelle gestion du paquet batterydata qui remonte les infos de batterie.
+* Installation de 2 tweak maison (il faut 'envoyer les dépendances' puis 'lancer les dépendances')
+    lightsensor : (capteur de luminosité de l’appareil) => il faut l’écran allumé par contre pour que ça marche.
+    sensors : (remonte toutes les infos des capteurs de tensions/courant/température : plus de 20 par appareil).
+* Modification de la 'Présence des commandes' dans 'Test/Compatibilité''.
+* Séparation des commandes de base des commandes perso dans 2 tab différents.
+
+Version 1.12 (07/04/2020) beta
 -------------------------
 * Ajout 1 commande perso + 2 info perso
-* Allègement des commandes envoyées sur les équipements (économie batterie) 
+* Allègement des commandes envoyées sur les équipements (économie batterie)
 * Correction bug page Santé
 * Correction date de dernière communication
 

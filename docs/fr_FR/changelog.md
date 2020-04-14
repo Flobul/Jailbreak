@@ -3,6 +3,11 @@ Changelog
 
 Liste des versions du plugin Jailbreak.
 
+Version 1.14 (14/04/2020) beta
+-------------------------
+* Rétablissement de méthode de récupération des information pour compatibilité globale
+* Correction et amélioration script dépendances
+
 Version 1.13 (13/04/2020) beta
 -------------------------
 * Nouvelle gestion du paquet batterydata qui remonte les infos de batterie.

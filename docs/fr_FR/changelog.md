@@ -3,6 +3,19 @@ Changelog
 
 Liste des versions du plugin Jailbreak.
 
+Version 1.16 (24/04/2020) beta
+-------------------------
+* Création d'une commande pour afficher la luminosité : affiche sur le dashboard le pourcentage de luminosité reçu par le capteur de l’équipement. (ratio en % = valeur mesurée / valeur max possible(lumière soleil direct)).
+* Installation d'un tweak maison : say (Text To Speech)
+* Création d'une commande Text To Speech : faites parler votre équipement en écrivant des mots doux depuis le dashboard. La commande action(message) peut être utilisée depuis la commande script/scenario/autre plugin… pour lire au haute voix les messages, la météo…
+* API du plugin créée : possibilité d’envoyer des valeurs de commandes info à Jeedom ou récupérer la leur depuis ce lien @IP_jeedom/core/api/jeeApi.php?plugin=Jailbreak&apikey=#api_key#&type=cmd&id=#cmd_id#&value=#value#
+(première étape pour mise en place de cron sur les équipements)
+
+Version 1.15 (22/04/2020) beta
+-------------------------
+* Correction et amélioration script dépendances
+* Correction bugs dashboard
+
 Version 1.14 (14/04/2020) beta
 -------------------------
 * Rétablissement de méthode de récupération des information pour compatibilité globale

@@ -11,13 +11,14 @@ Ce plugin permet de récupérer les informations et commander les équipements A
 **Fonctionnalités**
 ---------------------
 - Éteindre / redémarrer,
-- affichage les informations de l'appareil, (*Modèle, version, système d'exploitation, uptime, état batterie, charge système, espace total/utilisé, processeur et température*)
+- affichage les informations de l'appareil, (*Modèle, version, système d'exploitation, uptime, état batterie, charge système, espace total/utilisé, processeur et température, luminosité...*)
 - déverrouiller l'appareil,
 - envoyer une notification,
 - lancer des applications à distance,
 - lancer des raccourcis à distance,
 - filmer et envoyer le flux caméra en RTSP,
-- tester les tweaks, voir les processus actifs...
+- tester les tweaks, voir les processus actifs,
+- faites parler votre appareils via Siri.
 
 **Modèles compatibles**
 -----------------------
@@ -32,6 +33,7 @@ Configuration du plugin
 =======================
 
 Après téléchargement du plugin, activer le plugin.
+Puis dans le menu *Installation* du plugin, sur l'appareil désiré, envoyer les dépendances et lancer-les.
 
 Configuration des équipements
 =============================
@@ -54,7 +56,8 @@ Onglet Equipement:
 Onglet Commandes
 ----------------
 
-Les commandes sont générées automatiquement.
+Les commandes de base sont générées automatiquement.
+Il est possbile d'ajouter manuellement des commandes perso.
 
 Page Santé
 ----------
@@ -84,7 +87,7 @@ Script commande perso
 
 La commande perso permet de créer soi-même une commande personnalisée.
 
-Activator (compatible iOS 11/12/13-test)
+Activator (compatible iOS 9/10/11/12/13-test)
 ---------------------------------------
 
 > (si votre appareil est verrouillé, pensez à lancer la commande de déverrouillage avant celle-ci)  
@@ -154,6 +157,12 @@ Raccourcis (iOS12/13)
 1) Sur l'application **Raccourcis**, récupérer le nom du raccourci créé/téléchargé.  
 2) Sur Jeedom, dans la commande perso, entrer ```uiopen "shortcuts://run-shortcut?name=XXX"``` en remplaçant XXX par le nom du raccourci.  
 > (si votre appareil est verrouillé, pensez à lancer la commande de déverrouillage avant celle-ci (commande ```unlock```))  
+
+Text To Speech (iOS12/13)
+-------------------------
+Faites parler Thomas, Amelie ou Siri en envoyant le message désiré.
+Depuis le dashboard, saisissez le texte que vous souhaitez faire lire à votre appareil (limite de 5 secondes de lecture)
+Depuis Jeedom (scenario, script, autre plugin...), vous pouvez utiliser l'action message pour faire parler votre appareil.
 
 Liste des versions
 ==================

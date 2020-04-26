@@ -3,6 +3,13 @@ Changelog
 
 Liste des versions du plugin Jailbreak.
 
+Version 1.17 (26/04/2020) beta
+-------------------------
+* Correction script dépendances
+* Maj paquet say pour corriger les diacritiques (accents)
+* Ajout de l'historique dashboard pour uptime/luminosité
+* Ajout scripts pour indiquer la page courante (activator nécessaire)
+
 Version 1.16 (24/04/2020) beta
 -------------------------
 * Création d'une commande pour afficher la luminosité : affiche sur le dashboard le pourcentage de luminosité reçu par le capteur de l’équipement. (ratio en % = valeur mesurée / valeur max possible(lumière soleil direct)).

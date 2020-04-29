@@ -101,7 +101,13 @@ Voici la liste des paramètres :
 	sleep|veille *(appuie sur le bouton verrouillage)*,  
 	location *(bascule la localisation)*,  
 	rotation *(bascule le verrouillage de rotation d'écran)*,  
-	airplane-mode|airplane|avion *(bascule le mode avion)*.  
+	airplane-mode|airplane|avion *(bascule le mode avion)*,  
+	moinsfort|volumemoins *(baisse le son)*,  
+	plusfort|volumeplus *(augmente le son)*,  
+	screenshot *(prend un imprim'ecran)*,  
+	souriez|photo *(prend une photo avec le dernier objectif utilisé : executer 2 fois si hors de l'App photo)*,  
+	pluslumiere *(augmente la luminosité)*,  
+	moinslumiere *(baisse la luminosité)*.  
 Appuyez sur le bouton Safari du Dashboard (3 sur la photo ci-dessous)  
 ![Dashboard123](../assets/images/Dashboard123.png "Dashboard123")
 

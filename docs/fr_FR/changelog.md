@@ -3,14 +3,24 @@ Changelog
 
 Liste des versions du plugin Jailbreak.
 
-Version 1.17 (26/04/2020) beta
+Version 1.19 (06/05/2020)
+-------------------------
+* Ajout de boutons pour lancer manuellement les scripts de màj et update de commandes
+* Gestion des cron de màj depuis le menu Installation
+* Correction de bugs et amélioration
+
+Version 1.18 (05/05/2020)
+-------------------------
+* Correction de bugs et amélioration
+
+Version 1.17 (26/04/2020)
 -------------------------
 * Correction script dépendances
 * Maj paquet say pour corriger les diacritiques (accents)
 * Ajout de l'historique dashboard pour uptime/luminosité
 * Ajout scripts pour indiquer la page courante (activator nécessaire)
 
-Version 1.16 (24/04/2020) beta
+Version 1.16 (24/04/2020)
 -------------------------
 * Création d'une commande pour afficher la luminosité : affiche sur le dashboard le pourcentage de luminosité reçu par le capteur de l’équipement. (ratio en % = valeur mesurée / valeur max possible(lumière soleil direct)).
 * Installation d'un tweak maison : say (Text To Speech)
@@ -18,17 +28,17 @@ Version 1.16 (24/04/2020) beta
 * API du plugin créée : possibilité d’envoyer des valeurs de commandes info à Jeedom ou récupérer la leur depuis ce lien @IP_jeedom/core/api/jeeApi.php?plugin=Jailbreak&apikey=#api_key#&type=cmd&id=#cmd_id#&value=#value#
 (première étape pour mise en place de cron sur les équipements)
 
-Version 1.15 (22/04/2020) beta
+Version 1.15 (22/04/2020)
 -------------------------
 * Correction et amélioration script dépendances
 * Correction bugs dashboard
 
-Version 1.14 (14/04/2020) beta
+Version 1.14 (14/04/2020)
 -------------------------
 * Rétablissement de méthode de récupération des information pour compatibilité globale
 * Correction et amélioration script dépendances
 
-Version 1.13 (13/04/2020) beta
+Version 1.13 (13/04/2020)
 -------------------------
 * Nouvelle gestion du paquet batterydata qui remonte les infos de batterie.
 * Installation de 2 tweak maison (il faut 'envoyer les dépendances' puis 'lancer les dépendances')
@@ -37,7 +47,7 @@ Version 1.13 (13/04/2020) beta
 * Modification de la 'Présence des commandes' dans 'Test/Compatibilité''.
 * Séparation des commandes de base des commandes perso dans 2 tab différents.
 
-Version 1.12 (07/04/2020) beta
+Version 1.12 (07/04/2020)
 -------------------------
 * Ajout 1 commande perso + 2 info perso
 * Allègement des commandes envoyées sur les équipements (économie batterie)

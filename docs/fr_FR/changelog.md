@@ -3,6 +3,13 @@ Changelog
 
 Liste des versions du plugin Jailbreak.
 
+Version 1.20 (10/05/2020) beta
+-------------------------
+* inclusion des coordonnées GPS dans une commande de base
+* création d’un outil maison pour envoyer des SMS, (ne fonctionne qu’avec des iPhone ayant une carte SIM fonctionnelle)
+* inclusion de sa commande
+* Corrections mineures
+
 Version 1.19 (06/05/2020)
 -------------------------
 * Ajout de boutons pour lancer manuellement les scripts de màj et update de commandes

@@ -207,7 +207,8 @@ Prérequis : avoir un iPhone (iPad, AppleWatch non fonctionnels), avoir une cart
 ASTUCE pour executer la commande déverrouillage avant une commande
 ------------------------------------------------------------------
 Dans les réglages de la commande que l'on veut lancer (ouvrir Safari, ouvrir une app), ajoutez une *action avant d'execution la commande*, et cherchez la commande de deverrouillage (unlock) puis sauvegardez.
-![Unlock](../assets/images/unlock.png "Unlock")
+
+![Unlock](../images/unlock.png "Unlock")
 
 
 Liste des versions

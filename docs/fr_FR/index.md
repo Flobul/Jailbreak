@@ -27,18 +27,47 @@ Ce plugin permet de récupérer les informations et commander les équipements A
 Dashboard
 =========
 
-![Visuel du dashboard](../assets/images/Dashboard.png "Visuel du dashboard")
+![Visuel du dashboard](../images/jailbreak_screenshot.png "Visuel du dashboard")
 
 Configuration du plugin
 =======================
 
 Après téléchargement du plugin, activer le plugin.
-Puis dans le menu *Installation* du plugin, sur l'appareil désiré, envoyer les dépendances et lancer-les.
 
 Configuration des équipements
 =============================
 
-La configuration des équipements est accessible à partir du menu *Plugins > Monitoring > Jailbreak*.
+Afin d'intéragir entièrement avec le plugin Jailbreak, les équipements ont besoin que certains paquets/outils définis soient installés.
+Voici la liste de ces paquets :
+- apt : *gestionnaire de paquet qui permet d'installer tout le reste*
+- curl, wget : *permet de télécharger des ressources*
+- adv-cmds, coreutils, gawk, grep, sed : *utile pour trier/selectionner des résultats*
+- git : *inutilisé pour l'instant, mais peut être utilisé pour mettre à jour des commandes*
+- system-cmds, top, uikittools : *commandes système de l'état de l'appareil*
+- unrar, unzip : **
+- sshlock : *pour verrouiller l'équipement*
+- open : *pour ouvrir une app/page*
+- activator, activatorfix : *permet d'ouvrir/lancer/afficher des pages/app/evenement*
+- systeminfo : *récupère des informations sur l'équipement*
+- say  : *permet se se servir du mode Text To Speech*
+- batterydata : *récupère totes les informations sur la batterie*
+- lightsensor : *récupère la valeur lde luminosité*
+- sensors : *récupère les tensions/ampérageµ/température de tous les capteurs*
+- smsme : *permet d'envoyer des SMS depusi les iPhone uniquement*
+- gpsloc : *récupère les coordonnées GPS de l'équipement*
+  
+Ces paquets doivent être installés pour profiter pleinement du plugin Jailbreak.
+Un script lancé depuis le menu *Installation* du plugin permet d'installer ces paquet et de les maintenir à jour (vois ci dessous).
+
+Installation des dépendances des équipements
+============================================
+
+Dans le menu *Installation* du plugin, sur l'appareil désiré, envoyer les dépendances et lancer-les.
+
+Commande des équipements
+=============================
+
+Les différentes commandes des équipements sont accessibles à partir du menu *Plugins > Monitoring > Jailbreak*.
 
 Onglet Equipement:
 ------------------
@@ -88,7 +117,7 @@ Script commande perso
 La commande perso permet de créer soi-même une commande personnalisée.
 
 Activator (compatible iOS 9/10/11/12/13-test)
----------------------------------------
+---------------------------------------------
 
 > (si votre appareil est verrouillé, pensez à lancer la commande de déverrouillage avant celle-ci)  
 
@@ -164,11 +193,22 @@ Raccourcis (iOS12/13)
 2) Sur Jeedom, dans la commande perso, entrer ```uiopen "shortcuts://run-shortcut?name=XXX"``` en remplaçant XXX par le nom du raccourci.  
 > (si votre appareil est verrouillé, pensez à lancer la commande de déverrouillage avant celle-ci (commande ```unlock```))  
 
-Text To Speech (iOS12/13)
+Text To Speech (iOS 9/10/11/12/13)
 -------------------------
 Faites parler Thomas, Amelie ou Siri en envoyant le message désiré.
 Depuis le dashboard, saisissez le texte que vous souhaitez faire lire à votre appareil (limite de 5 secondes de lecture)
 Depuis Jeedom (scenario, script, autre plugin...), vous pouvez utiliser l'action message pour faire parler votre appareil.
+
+SMS (9/10/11/12/13)
+-------------------
+Envoyez un SMS depuis votre appareil via Jeedom.
+Prérequis : avoir un iPhone (iPad, AppleWatch non fonctionnels), avoir une carte SIM active sur l'iPhone.
+
+ASTUCE pour executer la commande déverrouillage avant une commande
+------------------------------------------------------------------
+Dans les réglages de la commande que l'on veut lancer (ouvrir Safari, ouvrir une app), ajoutez une *action avant d'execution la commande*, et cherchez la commande de deverrouillage (unlock) puis sauvegardez.
+![Unlock](../assets/images/unlock.png "Unlock")
+
 
 Liste des versions
 ==================

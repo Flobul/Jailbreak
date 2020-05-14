@@ -119,10 +119,10 @@ La commande perso permet de créer soi-même une commande personnalisée.
 Activator (compatible iOS 9/10/11/12/13-test)
 ---------------------------------------------
 
-> (si votre appareil est verrouillé, pensez à lancer la commande de déverrouillage avant celle-ci)  
+*[Si votre appareil est verrouillé, pensez à lancer la commande de déverrouillage avant celle-ci, commande unlock](https://flobul.github.io/Jailbreak/fr_FR/#tocAnchor-1-13-10)*  
 
 * Soit en tapant directement la commande complète : *activator send abracadabra*
-* Soit en utilisant le script transféré précédemment depuis la page Installation : ```*bash jailed/activator_send.sh* *<parametre>* *<répétition>*```  
+* Soit en utilisant le script transféré précédemment depuis la page Installation : ```bash jailed/activator_send.sh <parametre> <répétition>```  
 Voici la liste des paramètres :  
 	low-power|power *(bascule le mode d'économie d'énergie)*,  
 	homebutton|home *(appuie sur le bouton home)*,  
@@ -161,13 +161,13 @@ Créer ses notifications personnalisées (*Activator*)
 	Dans les log générés, récupérer l'ID du/des messages à la fin de la ligne : ```[2020-01-01 12:00:00][DEBUG] : Sortie action perso :```
 	Récupérer la chaine ID qui suit ```...message.show.XXX```  
 
-> (si votre appareil est verrouillé, pensez à lancer la commande de déverrouillage avant celle-ci (commande *unlock*))  
+*[Si votre appareil est verrouillé, pensez à lancer la commande de déverrouillage avant celle-ci, commande unlock](https://flobul.github.io/Jailbreak/fr_FR/#tocAnchor-1-13-10)*  
 
 - Mettre dans le champ commande perso : ```activator send libactivator.message.show.XXX``` en remplaçant XXX par l'ID récupéré.
 
 Prendre une photo (*Activator*)
 -------------------------------
-> (si votre appareil est verrouillé, pensez à lancer la commande de déverrouillage avant celle-ci (commande *unlock*))  
+*[Si votre appareil est verrouillé, pensez à lancer la commande de déverrouillage avant celle-ci, commande unlock](https://flobul.github.io/Jailbreak/fr_FR/#tocAnchor-1-13-10)*  
 
 - Mettre dans le champ commande perso : ```activator send libactivator.shortcut:com.apple.camera:"Prendre une photo" && sleep 3 && activator send libactivator.volume.down.press```  
 	Celle-ci sera enregistrée dans la galerie de l'appareil.
@@ -194,7 +194,7 @@ Raccourcis (iOS12/13)
 ---------------------
 1) Sur l'application **Raccourcis**, récupérer le nom du raccourci créé/téléchargé.  
 2) Sur Jeedom, dans la commande perso, entrer ```uiopen "shortcuts://run-shortcut?name=XXX"``` en remplaçant XXX par le nom du raccourci.  
-> (si votre appareil est verrouillé, pensez à lancer la commande de déverrouillage avant celle-ci (commande ```unlock```))  
+*[Si votre appareil est verrouillé, pensez à lancer la commande de déverrouillage avant celle-ci, commande unlock](https://flobul.github.io/Jailbreak/fr_FR/#tocAnchor-1-13-10)*  
 
 Text To Speech (iOS 9/10/11/12/13)
 -------------------------

@@ -122,7 +122,7 @@ Activator (compatible iOS 9/10/11/12/13-test)
 > (si votre appareil est verrouillé, pensez à lancer la commande de déverrouillage avant celle-ci)  
 
 * Soit en tapant directement la commande complète : *activator send abracadabra*
-* Soit en utilisant le script transféré précédemment depuis la page Installation : ```bash jailed/activator_send.sh* *<parametre>*```  
+* Soit en utilisant le script transféré précédemment depuis la page Installation : ```*bash jailed/activator_send.sh* *<parametre>* *<répétition>*```  
 Voici la liste des paramètres :  
 	low-power|power *(bascule le mode d'économie d'énergie)*,  
 	homebutton|home *(appuie sur le bouton home)*,  
@@ -137,6 +137,9 @@ Voici la liste des paramètres :
 	souriez|photo *(prend une photo avec le dernier objectif utilisé : executer 2 fois si hors de l'App photo)*,  
 	pluslumiere *(augmente la luminosité)*,  
 	moinslumiere *(baisse la luminosité)*.  
+*Répétition* permet de répéter N fois la commande demandée.  
+Ex : *bash jailed/activator_send.sh* pluslumiere 5* => répète 5 fois la commande *pluslumiere*  
+
 Appuyez sur le bouton Safari du Dashboard (3 sur la photo ci-dessous)  
 ![Dashboard123](../assets/images/Dashboard123.png "Dashboard123")
 
@@ -203,6 +206,11 @@ SMS (9/10/11/12/13)
 -------------------
 Envoyez un SMS depuis votre appareil via Jeedom.
 Prérequis : avoir un iPhone (iPad, AppleWatch non fonctionnels), avoir une carte SIM active sur l'iPhone.
+
+GPS (9/10/11/12/13)
+-------------------
+Récupérer les coordonnées GPS de l'appareil grâce à l'outil gpsloc.
+Autorisez la localisation pour l'App Localiser mon iPhone sur votre appareil. 
 
 ASTUCE pour executer la commande déverrouillage avant une commande
 ------------------------------------------------------------------

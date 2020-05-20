@@ -3,6 +3,12 @@ Changelog
 
 Liste des versions du plugin Jailbreak.
 
+Version 1.21 (19/05/2020) beta
+-------------------------
+* Retrait du volet SMS sur le Dashboard pour les iPad/iWatch... (l’outil smsme ne fonctionne que pour les iPhone),
+* correction mineure de cloture de connexion ssh
+* ajout de la commande Photo : pour prendre une photo et l'envoyer via les plugins Telegram ou Mail
+
 Version 1.20 (10/05/2020) beta
 -------------------------
 * inclusion des coordonnées GPS dans une commande de base

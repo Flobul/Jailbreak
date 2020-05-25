@@ -13,12 +13,12 @@ Ce plugin permet de récupérer les informations et commander les équipements A
 - Éteindre / redémarrer,
 - affichage les informations de l'appareil, (*Modèle, version, système d'exploitation, uptime, état batterie, charge système, espace total/utilisé, processeur et température, luminosité...*)
 - déverrouiller l'appareil,
-- envoyer une notification,
+- envoyer des notifications ou des bulletins,
 - lancer des applications à distance,
 - lancer des raccourcis à distance,
 - filmer et envoyer le flux caméra en RTSP,
 - tester les tweaks, voir les processus actifs,
-- faites parler votre appareils via Siri.
+- faites parler votre appareils via Siri (listez les voix disponbiles, plusieurs langues disponibles).
 
 **Modèles compatibles**
 -----------------------

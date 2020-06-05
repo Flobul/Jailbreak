@@ -3,19 +3,19 @@ Changelog
 
 Liste des versions du plugin Jailbreak.
 
-Version 1.22 (24/05/2020) beta
+Version 1.22 (24/05/2020)
 -------------------------
 * Ajout d’une commande info "Voix" qui liste les voix disponibles pour pouvoir les utiliser dans la commande say ensuite (-v Thomas).
 * Ajout de 2 actions messages "Notification" et "Bulletin". Pour envoyer une alerte/notification/bulletin sur son appareil.
 * Amélioration mineure des log debug
 
-Version 1.21 (19/05/2020) beta
+Version 1.21 (19/05/2020)
 -------------------------
 * Retrait du volet SMS sur le Dashboard pour les iPad/iWatch... (l’outil smsme ne fonctionne que pour les iPhone),
 * correction mineure de cloture de connexion ssh
 * ajout de la commande Photo : pour prendre une photo et l'envoyer via les plugins Telegram ou Mail
 
-Version 1.20 (10/05/2020) beta
+Version 1.20 (10/05/2020)
 -------------------------
 * inclusion des coordonnées GPS dans une commande de base
 * création d’un outil maison pour envoyer des SMS, (ne fonctionne qu’avec des iPhone ayant une carte SIM fonctionnelle)

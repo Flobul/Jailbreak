@@ -3,6 +3,14 @@ Changelog
 
 Liste des versions du plugin Jailbreak.
 
+Version 1.23 (06/06/2020) beta
+-------------------------
+* Ajout de l’image de l’appareil sur la page équipement,
+* récupération des infos non importantes 1 fois par jour au lieu de toutes les 5 min, (allégement des requêtes),
+* ajout d’une commande action avec menu déroulant, listant les App de l’appareil, pouvant ensuite être lancées,
+* nouvelle gestion des commandes crées => faites Sauvegarder sur chaque équipement.
+* corrections mineures et allègement de code.
+
 Version 1.22 (24/05/2020)
 -------------------------
 * Ajout d’une commande info "Voix" qui liste les voix disponibles pour pouvoir les utiliser dans la commande say ensuite (-v Thomas).

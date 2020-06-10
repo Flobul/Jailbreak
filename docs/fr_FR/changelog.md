@@ -3,6 +3,11 @@ Changelog
 
 Liste des versions du plugin Jailbreak.
 
+Version 1.24 (10/06/2020) beta
+-------------------------
+- Ajout d'une application supplémentaire prise en charge pour la commande Caméra,
+- désormais, gestion manuelle de l'application via menu déroulant (sauvegarder après modification)
+
 Version 1.23 (06/06/2020) beta
 -------------------------
 * Ajout de l’image de l’appareil sur la page équipement,
@@ -13,39 +18,39 @@ Version 1.23 (06/06/2020) beta
 
 Version 1.22 (24/05/2020)
 -------------------------
-* Ajout d’une commande info "Voix" qui liste les voix disponibles pour pouvoir les utiliser dans la commande say ensuite (-v Thomas).
-* Ajout de 2 actions messages "Notification" et "Bulletin". Pour envoyer une alerte/notification/bulletin sur son appareil.
-* Amélioration mineure des log debug
+* Ajout d’une commande info "Voix" qui liste les voix disponibles pour pouvoir les utiliser dans la commande say ensuite (-v Thomas),
+* ajout de 2 actions messages "Notification" et "Bulletin". Pour envoyer une alerte/notification/bulletin sur son appareil,
+* amélioration mineure des log debug.
 
 Version 1.21 (19/05/2020)
 -------------------------
 * Retrait du volet SMS sur le Dashboard pour les iPad/iWatch... (l’outil smsme ne fonctionne que pour les iPhone),
-* correction mineure de cloture de connexion ssh
-* ajout de la commande Photo : pour prendre une photo et l'envoyer via les plugins Telegram ou Mail
+* correction mineure de cloture de connexion ssh,
+* ajout de la commande Photo : pour prendre une photo et l'envoyer via les plugins Telegram ou Mail.
 
 Version 1.20 (10/05/2020)
 -------------------------
-* inclusion des coordonnées GPS dans une commande de base
-* création d’un outil maison pour envoyer des SMS, (ne fonctionne qu’avec des iPhone ayant une carte SIM fonctionnelle)
-* inclusion de sa commande
-* Corrections mineures
+* inclusion des coordonnées GPS dans une commande de base,
+* création d’un outil maison pour envoyer des SMS, (ne fonctionne qu’avec des iPhone ayant une carte SIM fonctionnelle),
+* inclusion de sa commande,
+* corrections mineures.
 
 Version 1.19 (06/05/2020)
 -------------------------
-* Ajout de boutons pour lancer manuellement les scripts de màj et update de commandes
-* Gestion des cron de màj depuis le menu Installation
-* Correction de bugs et amélioration
+* Ajout de boutons pour lancer manuellement les scripts de màj et update de commandes,
+* gestion des cron de màj depuis le menu Installation,
+* correction de bugs et amélioration.
 
 Version 1.18 (05/05/2020)
 -------------------------
-* Correction de bugs et amélioration
+* Correction de bugs et amélioration.
 
 Version 1.17 (26/04/2020)
 -------------------------
-* Correction script dépendances
-* Maj paquet say pour corriger les diacritiques (accents)
-* Ajout de l'historique dashboard pour uptime/luminosité
-* Ajout scripts pour indiquer la page courante (activator nécessaire)
+* Correction script dépendances,
+* màj paquet say pour corriger les diacritiques (accents),
+* ajout de l'historique dashboard pour uptime/luminosité,
+* ajout scripts pour indiquer la page courante (activator nécessaire).
 
 Version 1.16 (24/04/2020)
 -------------------------

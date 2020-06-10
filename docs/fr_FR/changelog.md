@@ -6,7 +6,7 @@ Liste des versions du plugin Jailbreak.
 Version 1.24 (10/06/2020) beta
 -------------------------
 - Ajout d'une application supplémentaire prise en charge pour la commande Caméra,
-- désormais, gestion manuelle de l'application via menu déroulant (sauvegarder après modification)
+- désormais, gestion manuelle de l'application Caméra via menu déroulant (sauvegarder après modification)
 
 Version 1.23 (06/06/2020) beta
 -------------------------

@@ -218,10 +218,9 @@ Dans les réglages de la commande que l'on veut lancer (ouvrir Safari, ouvrir un
 
 ![Unlock](../images/unlock.png "Unlock")
 
+{% include_relative perso.md %} 
 
 Liste des versions
 ==================
 
-*[Voir la liste des versions](changelog.md)*
-
-{% include_relative perso.md %} 
+{% include_relative changelog.md %} 

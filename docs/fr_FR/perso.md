@@ -31,18 +31,17 @@ Si vous connaissez une commande permettant d'obtenir une information utile, n'h�
 
 Exemple de commandes et la valeur de la commande sur Jeedom :
 
-| Commande               |            Résultat    |   Commentaire|
-| ---------------------- |: -------------: | ---------: |
-| batterydata \| grep "BatteryHealth :" \| cut -d: -f2 \| sed -e 's/\ //'``` : ```Good``` (affiche l'état de la batterie)
-| batterydata \| grep "InstantAmperage :" \| cut -d: -f2 | sed -e 's/\ //'``` : ```-82``` (affiche la consommation actuelle de l'appareil en mA)
-| batterydata \| grep "Watts =" \| cut -d= -f2 | sed -e 's/\ //' | sed -e 's/;//'  | head -n1``` : ```-82``` (affiche la puissance de l'adaptateur en Watt)
-| batterydata | grep "TimeRemaining :" | cut -d: -f2 | sed -e 's/\ //'``` : ```0``` (affiche le temps restant avant charge complete en s)
-| lightsensor | grep DayLight | cut -d= -f2 | sed -e s/\ //g``` : ```1``` (1 = lumière directe reçue)
-| sensors |  grep "Thermal sensors" | cut -d':' -f2 | sed -e s/\(//g | sed -e s/\)//g``` : ```30 thermal sensors found``` (nombre de sondes de température disponibles)
-| sensors | sed -n '/Thermal sensors/,$p'``` : ```=> Thermal sensors (°C): (30 thermal sensors found)\n-------------------------\nnear WiFi (top side) = 20.363647;
-...
-Avg: PMGR SOC Die Temp Sensor0 = 21.890625;``` (affiche toutes les sondes de température disponibles et leur valeur en °C)
-```sensors |  grep "Avg: PMGR SOC Die Temp Sensor0" | cut -d'=' -f2 | sed -e s/\ //g | | sed -e 's/;//g'``` : ```21.890625``` (affiche la valeur en °C donnée par une sonde de température)
+| Commande | Résultat | Commentaire |
+| ------------------------------------------------------------------------------ | ------ | -------------------------- |
+| *batterydata \| grep "BatteryHealth :" \| cut -d: -f2 \| sed -e 's/\ //'*  | *Good* |**affiche l'état de la batterie**
+| *batterydata \| grep "InstantAmperage :" \| cut -d: -f2 \| sed -e 's/\ //'*  | *-82* |**affiche la consommation actuelle de l'appareil (en mA)**
+| *batterydata \| grep "Watts =" \| cut -d= -f2 \| sed -e 's/\ //' \| sed -e 's/;//'*  | *10* |**affiche la puissance de l'adaptateur (en Watt)**
+| *batterydata \| grep "TimeRemaining :" \| cut -d: -f2 \| sed -e 's/\ //'*  | *0* |**affiche le temps restant avant charge complete (en s)**
+| *lightsensor \| grep DayLight \| cut -d= -f2 \| sed -e s/\ //g*  | *1* |**1 = lumière directe reçue**
+| *sensors \|  grep "Thermal sensors" \| cut -d':' -f2 \| sed -e s/\(//g \| sed -e s/\)//g*  | *30 thermal sensors found* |**nombre de sondes de température disponibles**
+| *sensors \| sed -n '/Thermal sensors/,$p'*  | *=> Thermal sensors (°C): (30 thermal sensors found)</br>-------------------------near WiFi (top side) = 20.363647;</br>...</br>Avg: PMGR SOC Die Temp Sensor0 = 21.890625;* |**affiche toutes les sondes de température disponibles et leur valeur en °C**
+| *sensors \|  grep "Avg: PMGR SOC Die Temp Sensor0" \| cut -d'=' -f2 \| sed -e s/\ //g \| sed -e 's/;//g'*  | *21.890625* |**affiche la valeur en °C donnée par une sonde de température**
+
 
 **ACTION : à partir des scripts existants**
 -----------------------

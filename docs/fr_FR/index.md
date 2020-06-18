@@ -220,7 +220,4 @@ Dans les réglages de la commande que l'on veut lancer (ouvrir Safari, ouvrir un
 
 {% include_relative perso.md %} 
 
-Liste des versions
-==================
-
 {% include_relative changelog.md %} 

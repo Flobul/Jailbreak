@@ -223,3 +223,5 @@ Liste des versions
 ==================
 
 *[Voir la liste des versions](changelog.md)*
+
+{% include_relative perso.md %} 

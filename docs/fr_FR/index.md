@@ -1,7 +1,5 @@
-Présentation Jailbreak
-==================
-
-![Logo plugin](../images/Jailbreak_icon.png "Logo plugin")
+Présentation
+============
 
 Ce plugin permet de récupérer les informations et commander les équipements Apple jailbreakés.
 

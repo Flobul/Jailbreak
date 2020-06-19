@@ -1,9 +1,6 @@
----
-langs: [fr_FR,en_US,es_ES] 
-baseurl: "/"
-sass:
-  sass_dir: assets/css
-  style: compressed
+theme: jekyll-theme-cayman
+languages: ["en", "fr", "es"]
+exclude_from_localizations: ["assets", "CNAME"]
 markdown: kramdown
 permalink: /404.html
 kramdown:
@@ -18,4 +15,3 @@ exclude:
 plugins:
 - jekyll-seo-tag
 title: "Documentation plugin Jailbreak"
-theme: jekyll-theme-cayman

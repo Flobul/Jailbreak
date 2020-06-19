@@ -1,6 +1,11 @@
 theme: jekyll-theme-cayman
 languages: ["en", "fr", "es"]
 exclude_from_localizations: ["assets", "CNAME"]
+defaultLang: fr
+languageNames:
+  fr: Français
+  en: English
+  es: Español
 markdown: kramdown
 permalink: /404.html
 kramdown:

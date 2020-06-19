@@ -1,7 +1,7 @@
 Présentation Jailbreak
 ==================
 
-![Logo plugin](../assets/images/Jailbreak_icon.png "Logo plugin")
+![Logo plugin](../images/Jailbreak_icon.png "Logo plugin")
 
 Ce plugin permet de récupérer les informations et commander les équipements Apple jailbreakés.
 
@@ -91,7 +91,7 @@ Il est possbile d'ajouter manuellement des commandes perso.
 Page Santé
 ----------
 
-![Page santé](../assets/images/jailbreak_screenshot2.png "Page Santé")
+![Page santé](../images/jailbreak_screenshot2.png "Page Santé")
 
 La page Santé est accessible depuis la page de configuration des équipements.
 Elle remonte les informations des équipement.
@@ -99,20 +99,20 @@ Elle remonte les informations des équipement.
 Page Installation
 ------------------
 
-![Page Installation](../assets/images/jailbreak_screenshot1.png "Page Installation")
+![Page Installation](../images/jailbreak_screenshot1.png "Page Installation")
 
 La page Installation est accessible depuis la page de configuration des équipements.
 Elle permet d'envoyer le fichier d'installation des dépendances des équipements.
 C'est-à-dire les Tweaks et paquets dont le plugin a besoin, mais aussi les scripts servant à la commande perso.
 
-![Tab Test/Compatibilité](../assets/images/jailbreak_screenshot4.png "Tab Test/Compatibilité")
+![Tab Test/Compatibilité](../images/jailbreak_screenshot4.png "Tab Test/Compatibilité")
 
 Le tab Test/Compatibilié dans la page Installation permet de tester la connexion SSH, vérifier la présence des Tweaks installés précédemment, lister les arguments possible pour Activator (script perso), et afficher les processus actifs (debug).
 
 Script commande perso
 =====================
 
-![Script commande perso](../assets/images/jailbreak_screenshot3.png "Script commande perso")
+![Script commande perso](../images/jailbreak_screenshot3.png "Script commande perso")
 
 La commande perso permet de créer soi-même une commande personnalisée.
 
@@ -141,7 +141,7 @@ Voici la liste des paramètres :
 Ex : *bash jailed/activator_send.sh* pluslumiere 5* => répète 5 fois la commande *pluslumiere*  
 
 Appuyez sur le bouton Safari du Dashboard (3 sur la photo ci-dessous)  
-![Dashboard123](../assets/images/Dashboard123.png "Dashboard123")
+![Dashboard123](../images/Dashboard123.png "Dashboard123")
 
 Créer ses notifications personnalisées (*Activator*)
 ----------------------------------------------------
@@ -180,7 +180,7 @@ Peut être utilisé depuis un déclenchement programmé ou provoqué sur Jeedom.
 - Sur l'appareil, ouvrir Safari et aller sur la page désirée (Dashboard/Design de Jeedom...),  
 	cliquer sur le bouton partager, puis "Sur l'écran d'accueil", enfin "Ajouter",  
 - Appuyez sur le bouton Safari du Dashboard (3 sur la photo ci-dessous)  
-![Dashboard123](../assets/images/Dashboard123.png "Dashboard123")
+![Dashboard123](../images/Dashboard123.png "Dashboard123")
 
 Utiliser votre appareil comme caméra de surveillance (*Activator*/*SimulateTouch*)
 ----------------------------------------------------------------------------------

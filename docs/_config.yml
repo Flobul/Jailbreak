@@ -20,3 +20,4 @@ exclude:
 plugins:
 - jekyll-seo-tag
 title: "Documentation plugin Jailbreak"
+description: "Plugin Jailbreak"

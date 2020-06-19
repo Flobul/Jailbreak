@@ -6,6 +6,9 @@ languageNames:
   fr: Français
   en: English
   es: Español
+sass:
+  sass_dir: assets/css
+  style: compressed
 markdown: kramdown
 permalink: /404.html
 kramdown:

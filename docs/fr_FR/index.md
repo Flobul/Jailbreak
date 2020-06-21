@@ -195,6 +195,8 @@ Selectionnez la méthode désirée :
 Recherchez la commande Telegram ou Mail pour l'envoi de la photo.
 Et cochez le type de commande selectionné.
 
+![Methode](../images/methode.png "Methode")
+
 Ouvrir une page d'accueil personnalisée (*Activator*)
 -----------------------------------------------------
 Peut être utilisé depuis un déclenchement programmé ou provoqué sur Jeedom.  

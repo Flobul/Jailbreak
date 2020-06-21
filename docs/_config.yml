@@ -2,6 +2,7 @@ theme: jekyll-theme-cayman
 languages: ["en", "fr", "es"]
 exclude_from_localizations: ["assets", "CNAME"]
 defaultLang: fr
+langs: [fr_FR,en_US,es_ES] 
 languageNames:
   fr: Français
   en: English

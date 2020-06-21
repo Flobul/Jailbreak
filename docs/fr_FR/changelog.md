@@ -3,6 +3,17 @@ Changelog
 
 Liste des versions du plugin Jailbreak.
 
+Version 1.25 (20/06/2020) beta
+-------------------------
+- Ajout cron commandes (tab cron)
+- Ajout du temps de traitement en log debug
+- Optimisation du temps de traitement des commandes
+- Correction info espace disque
+- Correction de la valeur de retour de certaines commandes
+- Correction commande Liste des App qui n’affichaient rien
+- Ajout d’une nouvelle méthode (zéro) de capture de photo pour iOS < 10
+- Ajout d’une nouvelle App de gestion (commande Camera) Karakuri Camera - Auto Shutter & WEB Monitoring (com.plusblog.karakuri)
+
 Version 1.24 (10/06/2020) beta
 -------------------------
 - Ajout d'une application supplémentaire prise en charge pour la commande Caméra,

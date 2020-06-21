@@ -8,19 +8,29 @@ Ce plugin permet de récupérer les informations et commander les équipements A
 
 **Fonctionnalités**
 ---------------------
-- Éteindre / redémarrer,
-- affichage les informations de l'appareil, (*Modèle, version, système d'exploitation, uptime, état batterie, charge système, espace total/utilisé, processeur et température, luminosité...*)
-- déverrouiller l'appareil,
-- envoyer des notifications ou des bulletins,
-- lancer des applications à distance,
-- lancer des raccourcis à distance,
-- filmer et envoyer le flux caméra en RTSP,
-- tester les tweaks, voir les processus actifs,
-- faites parler votre appareils via Siri (listez les voix disponbiles, plusieurs langues disponibles).
+  * **Information :**
+    * Modèle, version, système d'exploitation, uptime, état batterie, charge système, espace total/utilisé, processeur et température, luminosité, coordonnées GPS...
+    * tester les tweaks, voir les processus actifs,
+    * lister les voix disponbiles,
+    * lister toutes les App disponbiles,
+
+  * **Action :**
+    * Éteindre / redémarrer,
+    * verrouiller / déverrouiller l'appareil,
+    * envoyer des notifications ou des bulletins,
+    * executer des raccourcis à distance,
+    * lancer n'importe quelle application à distance,
+    * utiliser son appareil en tant que caméra de surveillance,
+    * prendre une photo et l'envoyer par Telegram/Mail,
+    * TextToSpeech via Siri,
+    * envoyer des SMS,
+    * créer des cron sur l'appareil et les gérer.
 
 **Modèles compatibles**
 -----------------------
 - iPad / iPhone (non testé sur AppleTV/iWatch...)
+- iOS mini testé : 9.3.5
+- iOS maxi testé : 13.5
 
 Dashboard
 =========
@@ -42,7 +52,7 @@ Voici la liste de ces paquets :
 - adv-cmds, coreutils, gawk, grep, sed : *utile pour trier/selectionner des résultats*
 - git : *inutilisé pour l'instant, mais peut être utilisé pour mettre à jour des commandes*
 - system-cmds, top, uikittools : *commandes système de l'état de l'appareil*
-- unrar, unzip : **
+- unrar, unzip : *désarchiver*
 - sshlock : *pour verrouiller l'équipement*
 - open : *pour ouvrir une app/page*
 - activator, activatorfix : *permet d'ouvrir/lancer/afficher des pages/app/evenement*
@@ -55,7 +65,7 @@ Voici la liste de ces paquets :
 - gpsloc : *récupère les coordonnées GPS de l'équipement*
   
 Ces paquets doivent être installés pour profiter pleinement du plugin Jailbreak.
-Un script lancé depuis le menu *Installation* du plugin permet d'installer ces paquet et de les maintenir à jour (vois ci dessous).
+Un script lancé depuis le menu *Installation* du plugin permet d'installer ces paquets et de les maintenir à jour (voir ci-dessous).
 
 Installation des dépendances des équipements
 ============================================
@@ -84,6 +94,7 @@ Onglet Commandes
 ----------------
 
 Les commandes de base sont générées automatiquement.
+L'interval de rafraîchissement des informations est de 5 minutes. Excepté les informations figées de l'appareil (modèle, version, OS...) qui est 1 jour.
 Il est possbile d'ajouter manuellement des commandes perso.
 
 Page Santé
@@ -134,7 +145,12 @@ Voici la liste des paramètres :
 	screenshot *(prend un imprim'ecran)*,  
 	souriez|photo *(prend une photo avec le dernier objectif utilisé : executer 2 fois si hors de l'App photo)*,  
 	pluslumiere *(augmente la luminosité)*,  
-	moinslumiere *(baisse la luminosité)*.  
+	moinslumiere *(baisse la luminosité)*,  
+	audio N *(avec N entre 0 et 100 => fixe une valeur au volume)*,  
+	lumière N *(avec N entre 0 et 100 => fixe une valeur à la luminosité)*,  
+	autolock|verrou *(activer/désactiver le verrouillage automatique)*,  
+	darkmode|modesombre *(activer/désactiver le mode sombre)*.  
+
 *Répétition* permet de répéter N fois la commande demandée.  
 Ex : *bash jailed/activator_send.sh* pluslumiere 5* => répète 5 fois la commande *pluslumiere*  
 
@@ -167,8 +183,17 @@ Prendre une photo (*Activator*)
 -------------------------------
 *[Si votre appareil est verrouillé, pensez à lancer la commande de déverrouillage avant celle-ci, commande unlock](https://flobul.github.io/Jailbreak/fr_FR/#tocAnchor-1-13-10)*  
 
-- Mettre dans le champ commande perso : ```activator send libactivator.shortcut:com.apple.camera:"Prendre une photo" && sleep 3 && activator send libactivator.volume.down.press```  
-	Celle-ci sera enregistrée dans la galerie de l'appareil.
+Depuis la commande perso Camera :
+Selectionnez la méthode désirée : 
+  * 0 : uniquement pour iOS < 10 (utilise le tweak camshot)
+  * 1 : ouvre *libactivator.camera.invoke-shutter*
+  * 2 : ouvre *libactivator.shortcut:com.apple.camera:Prendre une photo*
+  * 3 : ouvre *uiopen "camera://"*
+  * 4 : ouvre *com.apple.camera*
+  * 5 : ouvre *libactivator.shortcut:com.apple.camera:Enregistrer un ralenti*
+  
+Recherchez la commande Telegram ou Mail pour l'envoi de la photo.
+Et cochez le type de commande selectionné.
 
 Ouvrir une page d'accueil personnalisée (*Activator*)
 -----------------------------------------------------
@@ -185,8 +210,11 @@ Utiliser votre appareil comme caméra de surveillance (*Activator*/*SimulateTouc
 Utilisez votre appareil comme caméra de surveillance.  
 Nécessite une Application de l'App Store (Periscope HD ou XXX).  
 Nécessite un lecteur de flux RTSP (Synology, VLC...)  
-	(Periscode HD) - Filme dès l'ouverture de l'application.  
-	(IP Camera Lite) - Une fois l'app ouverte, cliquer sur "Turn on IP Camera Server" pour filmer. ```stouch touch 10 500```
+	(Periscode HD) - Filme dès l'ouverture de l'application. (envoi un flux RTSP) 
+	(IP Camera Lite) - Une fois l'app ouverte, cliquer sur "Turn on IP Camera Server" pour filmer. ```stouch touch 10 500``` (envoi un flux RTSP)
+	(Karakuri Camera) - Filme dès l'ouverture et présente une image jpg à l'adresse : http://@IP/preview.jpg à chaque GET http://@IP/preview.json => compatible avec le plugin Camera qui peut aussi paramètrer le flux (qualité, intervalle...)
+
+![Camera](../images/camera.png "Camera")
 
 Raccourcis (iOS12/13)
 ---------------------
@@ -209,6 +237,15 @@ GPS (9/10/11/12/13)
 -------------------
 Récupérer les coordonnées GPS de l'appareil grâce à l'outil gpsloc.
 Autorisez la localisation pour l'App Localiser mon iPhone sur votre appareil. 
+
+Gestion du cron commandes
+-------------------
+Ce cron permet de créer un cron directement sur l'appareil.
+Et d'envoyer des informations listées selon des intervalles définis.
+
+Attention aux intervalles rapprochés qui risquent de consommer la batterie de votre appareil.
+
+![Cron](../images/croncmd.png "Cron")
 
 ASTUCE pour executer la commande déverrouillage avant une commande
 ------------------------------------------------------------------

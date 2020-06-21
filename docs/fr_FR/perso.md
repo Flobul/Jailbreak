@@ -4,7 +4,7 @@ Commandes perso
 Le plugin contient 2 commandes par défaut lors de la création d'un équipement.
 Il est possible d'en créer davantage en cliquant sur le bouton "Ajouter une commande perso".
 
-![Logo plugin](../assets/images/jailbreak_screenshot3.png "Commande perso")
+![Logo plugin](../images/jailbreak_screenshot3.png "Commande perso")
 
 La commande perso permet de personnaliser soi-même une information/action en entrant la commande bash/ssh.
 

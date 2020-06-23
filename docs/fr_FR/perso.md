@@ -17,11 +17,11 @@ Le script current_page.sh :
 - arguments de la commande (ajouter en fin de ligne...) : aucun
 - argument optionnel de la commande : *-i* en fin de commande pour rechercher sur iTunes le nom de l'app.
 
-Exemples de commandes et la valeur de la commande sur Jeedom :
-```bash jailed/current_page.sh``` : ```lockscreen``` (l'écran est verrouillé)
-```bash jailed/current_page.sh``` : ```springboard``` (il s'agit de l'écran d'accueil)
-```bash jailed/current_page.sh``` : ```Books``` (il s'agit de l'application Livres)
-```bash jailed/current_page.sh -i``` : ```Livres``` (il s'agit de l'application Livres)
+Exemples de commandes et la valeur de la commande sur Jeedom :  
+```bash jailed/current_page.sh``` : ```lockscreen``` (l'écran est verrouillé)  
+```bash jailed/current_page.sh``` : ```springboard``` (il s'agit de l'écran d'accueil)  
+```bash jailed/current_page.sh``` : ```Books``` (il s'agit de l'application Livres)  
+```bash jailed/current_page.sh -i``` : ```Livres``` (il s'agit de l'application Livres)  
 
 > **Note**  
 > Pour fonctionner, il faut installer le tweak Activator.
@@ -52,8 +52,9 @@ Le script activator_send.sh :
 
 
 Les commandes manuelles :
-- Activator : *activator send <listeners>*
-avec <listeners> : une des lignes listées dans le champ texte de Menu Installation > Equipement > Activator Listeners
-permet d'ouvrir toutes les applications disponibles sur l\'équipement et d'éxecuter des 
+- Activator : *activator send* *listeners*
+avec *listeners* : une des lignes listées dans le champ texte de Menu Installation > Equipement > Activator Listeners.
+Cela permet d'ouvrir toutes les applications disponibles sur l\'équipement ou d'éxecuter des actions (activer darkmode, couper bluetooth, couper wifi...)
+
 
 

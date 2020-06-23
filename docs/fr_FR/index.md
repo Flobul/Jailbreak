@@ -249,6 +249,12 @@ Attention aux intervalles rapprochés qui risquent de consommer la batterie de v
 
 ![Cron](../images/croncmd.png "Cron")
 
+Sélectionnez une ou plusieurs commandes dans la liste, choisissez l'intervalle de temps et cliquez sur créer.
+Le cron va être créé sur l'appareil et être executer. En rechargeant la page, son statut va passer à OK.
+- Vous pouvez alors le stopper : cliquez sur le carré blanc sur fond rouge stop son execution, il suffit de cliquer sur le triangle blanc sur fond vert pour le relancer (inutile de le recréer à zero),
+- récupérer les log : cliquez sur le bouton Log va télécharger les log et les présenter dans la page Configuration du plugin (\_cron à la fin du nom),
+- laissez Jeedom gérer la gestion automatique : si vous activer la fonction, le plugin Jailbreak va vérifier chaque jour que le cron est executer et le lancer dans le cas contraire.
+
 ASTUCE pour executer la commande déverrouillage avant une commande
 ------------------------------------------------------------------
 Dans les réglages de la commande que l'on veut lancer (ouvrir Safari, ouvrir une app), ajoutez une *action avant d'execution la commande*, et cherchez la commande de deverrouillage (unlock) puis sauvegardez.

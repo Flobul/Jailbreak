@@ -47,7 +47,7 @@ Exemple de commandes et la valeur de la commande sur Jeedom :
 -----------------------
 Le script activator_send.sh :
 - commande à saisir dans le champ : *bash jailed/activator_send.sh XXX*
-- arguments de la commande (remplacer XXX par...) : un des paramètres listés ici *[Paramètres](#tocAnchor-1-13-1)* => *low-power/home/respring/sleep/location/rotation/avion/verrou/modesombre/moinsfort/plusfort/audio 100/lumiere 100/screenshot/photo/pluslumiere/moinslumiere*
+- arguments de la commande (remplacer XXX par...) : un des paramètres listés ici : *[Paramètres](#tocAnchor-1-13-1)* => *low-power/home/respring/sleep/location/rotation/avion/verrou/modesombre/moinsfort/plusfort/audio 100/lumiere 100/screenshot/photo/pluslumiere/moinslumiere*
 - argument optionnel de la commande :  un chiffre de de 1 à 10 (répétition de la commande)
 
 

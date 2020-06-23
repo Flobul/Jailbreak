@@ -192,10 +192,12 @@ Selectionnez la méthode désirée :
   * 4 : ouvre *com.apple.camera*
   * 5 : ouvre *libactivator.shortcut:com.apple.camera:Enregistrer un ralenti*
   
+![Methode](../images/methode.png "Methode")  
+
 Recherchez la commande Telegram ou Mail pour l'envoi de la photo.
 Et cochez le type de commande selectionné.
 
-![Methode](../images/methode.png "Methode")
+![Photo](../images/photo.png "Photo")
 
 Ouvrir une page d'accueil personnalisée (*Activator*)
 -----------------------------------------------------
@@ -218,7 +220,7 @@ Nécessite un lecteur de flux RTSP ou Snapshot JPG (Plugin Camera, Synology, VLC
 
 ![Camera](../images/camera.png "Camera")
 
-Raccourcis (iOS12/13)
+Raccourcis (iOS 12/13)
 ---------------------
 1) Sur l'application **Raccourcis**, récupérer le nom du raccourci créé/téléchargé.  
 2) Sur Jeedom, dans la commande perso, entrer ```uiopen "shortcuts://run-shortcut?name=XXX"``` en remplaçant XXX par le nom du raccourci.  
@@ -230,15 +232,48 @@ Faites parler Thomas, Amelie ou Siri en envoyant le message désiré.
 Depuis le dashboard, saisissez le texte que vous souhaitez faire lire à votre appareil (limite de 5 secondes de lecture)
 Depuis Jeedom (scenario, script, autre plugin...), vous pouvez utiliser l'action message pour faire parler votre appareil.
 
+![Say](../images/say.png "Say")
+
+Plus d'info sur la commande : [GitHub Say](https://github.com/Flobul/Say)
+
 SMS (9/10/11/12/13)
 -------------------
-Envoyez un SMS depuis votre appareil via Jeedom.
+Envoyez un SMS depuis votre iPhone uniquement via Jeedom.
 Prérequis : avoir un iPhone (iPad, AppleWatch non fonctionnels), avoir une carte SIM active sur l'iPhone.
+
+![SMS](../images/sms.png "SMS")
+
+Plus d'info sur la commande : [GitHub SMSme](https://github.com/Flobul/SMSme)
 
 GPS (9/10/11/12/13)
 -------------------
 Récupérer les coordonnées GPS de l'appareil grâce à l'outil gpsloc.
-Autorisez la localisation pour l'App Localiser mon iPhone sur votre appareil. 
+Autorisez la localisation pour l'App "Localiser mon iPhone" sur votre appareil. 
+
+Plus d'info sur la commande : [GitHub GPSLoc](https://github.com/Flobul/GPSLoc)
+
+Notification et Bulletin (9/10/11/12/13) (à vérifier)
+-------------------
+Envoyer une notification personnalisée ou un bulletin sur son appareil.
+
+Sur Jeedom :
+![Notif-Bulletin](../images/notif-bulletin.png "Notif-Bulletin")  
+
+Notification sur l'appareil :
+![Notification](../images/notif.png "Notification")  
+
+Bulletin sur l'appareil :
+![Bulletin](../images/bulletin.png "Bulletin")  
+
+Plus d'info sur la commande : [GitHub Publication](https://github.com/Flobul/PublicationMe)
+Plus d'info sur la commande : [GitHub Bulletin](https://github.com/Flobul/NotifyMe)
+
+Liste des App
+-------------------
+Cette commande affiche dans un menu déroulant la liste actuelle des applications installées sur l'appareil.
+On peut alors la selectionner puis enregistrer l'équipement, afin de pouvoir executer la commande de lancement de cette App.
+
+![Liste des App](../images/applist.png "Liste des App")
 
 Gestion du cron commandes
 -------------------

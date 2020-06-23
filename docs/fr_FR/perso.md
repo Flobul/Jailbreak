@@ -39,7 +39,7 @@ Exemple de commandes et la valeur de la commande sur Jeedom :
 | *batterydata \| grep "TimeRemaining :" \| cut -d: -f2 \| sed -e 's/\ //'*  | *0* |**affiche le temps restant avant charge complete (en s)**
 | *lightsensor \| grep DayLight \| cut -d= -f2 \| sed -e s/\ //g*  | *1* |**1 = lumière directe reçue**
 | *sensors \|  grep "Thermal sensors" \| cut -d':' -f2 \| sed -e s/\(//g \| sed -e s/\)//g*  | *30 thermal sensors found* |**nombre de sondes de température disponibles**
-| *sensors \| sed -n '/Thermal sensors/,$p'*  | *=> Thermal sensors (°C): (30 thermal sensors found)</br>-------------------------near WiFi (top side) = 20.363647;</br>...</br>Avg: PMGR SOC Die Temp Sensor0 = 21.890625;* |**affiche toutes les sondes de température disponibles et leur valeur en °C**
+| *sensors \| sed -n '/Thermal sensors/,$p'*  | ![sensors](../images/sensors.png "sensors") |**affiche toutes les sondes de température disponibles et leur valeur en °C**
 | *sensors \|  grep "Avg: PMGR SOC Die Temp Sensor0" \| cut -d'=' -f2 \| sed -e s/\ //g \| sed -e 's/;//g'*  | *21.890625* |**affiche la valeur en °C donnée par une sonde de température**
 
 

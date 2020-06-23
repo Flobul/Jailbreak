@@ -18,10 +18,12 @@ Le script current_page.sh :
 - argument optionnel de la commande : *-i* en fin de commande pour rechercher sur iTunes le nom de l'app.
 
 Exemples de commandes et la valeur de la commande sur Jeedom :  
-    bash jailed/current_page.sh : ```lockscreen``` (l'écran est verrouillé)  
-```bash jailed/current_page.sh``` : ```springboard``` (il s'agit de l'écran d'accueil)  
-```bash jailed/current_page.sh``` : ```Books``` (il s'agit de l'application Livres)  
-```bash jailed/current_page.sh -i``` : ```Livres``` (il s'agit de l'application Livres)  
+| Commande | Résultat | Commentaire |
+| ------------------------------------------------------------------------------ | ------ | -------------------------- |
+| *bash jailed/current_page.sh*  | *lockscreen* |**l'écran est verrouillé**
+| *bash jailed/current_page.sh*  | *springboard* |**il s'agit de l'écran d'accueil**
+| *bash jailed/current_page.sh*  | *Books* |**il s'agit de l'application Livres**
+| *bash jailed/current_page.sh -i*  | *Livres* |**il s'agit de l'application Livres**
 
 > **Note**  
 > Pour fonctionner, il faut installer le tweak Activator.

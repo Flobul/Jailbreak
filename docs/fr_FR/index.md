@@ -93,16 +93,17 @@ Onglet Equipement:
 Onglet Commandes
 ----------------
 
-Les commandes de base sont générées automatiquement.
-L'interval de rafraîchissement des informations est de 5 minutes. Excepté les informations figées de l'appareil (modèle, version, OS...) qui est 1 jour.
-Il est possbile d'ajouter manuellement des commandes perso.
+Les commandes de base sont générées automatiquement.  
+L'interval de rafraîchissement des informations est de 5 minutes.  
+Excepté les informations figées de l'appareil (modèle, version, OS...) dont l'interval est de 1 jour.  
+Il est possbile d'ajouter manuellement des commandes perso.  
 
 Page Santé
 ----------
 
 ![Page santé](../images/jailbreak_screenshot2.png "Page Santé")
 
-La page Santé est accessible depuis la page de configuration des équipements.
+La page Santé est accessible depuis la page de configuration des équipements.  
 Elle remonte les informations des équipement.
 
 Page Installation
@@ -110,49 +111,52 @@ Page Installation
 
 ![Page Installation](../images/jailbreak_screenshot1.png "Page Installation")
 
-La page Installation est accessible depuis la page de configuration des équipements.
-Elle permet d'envoyer le fichier d'installation des dépendances des équipements.
-C'est-à-dire les Tweaks et paquets dont le plugin a besoin, mais aussi les scripts servant à la commande perso.
+La page Installation est accessible depuis la page de configuration des équipements.  
+Elle permet d'envoyer le fichier d'installation des dépendances des équipements.  
+C'est-à-dire les Tweaks et paquets dont le plugin a besoin, mais aussi les scripts servant à la commande perso.  
 
 ![Tab Test/Compatibilité](../images/jailbreak_screenshot4.png "Tab Test/Compatibilité")
 
-Le tab Test/Compatibilié dans la page Installation permet de tester la connexion SSH, vérifier la présence des Tweaks installés précédemment, lister les arguments possible pour Activator (script perso), et afficher les processus actifs (debug).
+Le tab Test/Compatibilié dans la page Installation permet :  
+- de tester la connexion SSH, vérifier la présence des Tweaks installés précédemment,  
+- de lister les arguments possible pour Activator (script perso),  
+- et d'afficher les processus actifs (debug).  
 
 Script commande perso
 =====================
 
 ![Script commande perso](../images/jailbreak_screenshot3.png "Script commande perso")
 
-La commande perso permet de créer soi-même une commande personnalisée.
+La commande perso permet de créer soi-même une commande personnalisée.  
 
 Activator (compatible iOS 9/10/11/12/13-test)
 ---------------------------------------------
 
-*[Si votre appareil est verrouillé, pensez à lancer la commande de déverrouillage avant celle-ci, commande unlock](#tocAnchor-1-13-11)*  
+*[Si votre appareil est verrouillé, pensez à lancer la commande de déverrouillage avant celle-ci, commande unlock](#tocAnchor-1-13-13)*  
 
 * Soit en tapant directement la commande complète : *activator send abracadabra*
-* Soit en utilisant le script transféré précédemment depuis la page Installation : ```bash jailed/activator_send.sh <parametre> <répétition>```  
+* Soit en utilisant le script transféré précédemment depuis la page Installation : ```bash jailed/activator_send.sh <paramètre> <répétition>```  
 Voici la liste des paramètres :  
-	low-power|power *(bascule le mode d'économie d'énergie)*,  
-	homebutton|home *(appuie sur le bouton home)*,  
-	respring *(lance un respring)*,  
-	sleep|veille *(appuie sur le bouton verrouillage)*,  
-	location *(bascule la localisation)*,  
-	rotation *(bascule le verrouillage de rotation d'écran)*,  
-	airplane-mode|airplane|avion *(bascule le mode avion)*,  
-	moinsfort|volumemoins *(baisse le son)*,  
-	plusfort|volumeplus *(augmente le son)*,  
-	screenshot *(prend un imprim'ecran)*,  
-	souriez|photo *(prend une photo avec le dernier objectif utilisé : executer 2 fois si hors de l'App photo)*,  
-	pluslumiere *(augmente la luminosité)*,  
-	moinslumiere *(baisse la luminosité)*,  
-	audio N *(avec N entre 0 et 100 => fixe une valeur au volume)*,  
-	lumière N *(avec N entre 0 et 100 => fixe une valeur à la luminosité)*,  
-	autolock|verrou *(activer/désactiver le verrouillage automatique)*,  
-	darkmode|modesombre *(activer/désactiver le mode sombre)*.  
+    * low-power|power *(bascule le mode d'économie d'énergie)*,  
+    * homebutton|home *(appuie sur le bouton home)*,  
+    * respring *(lance un respring)*,  
+    * sleep|veille *(appuie sur le bouton verrouillage)*,  
+    * location *(bascule la localisation)*,  
+    * rotation *(bascule le verrouillage de rotation d'écran)*,  
+    * airplane-mode|airplane|avion *(bascule le mode avion)*,  
+    * moinsfort|volumemoins *(baisse le son)*,  
+    * plusfort|volumeplus *(augmente le son)*,  
+    * screenshot *(prend un imprim'ecran)*,  
+    * souriez|photo *(prend une photo avec le dernier objectif utilisé : executer 2 fois si hors de l'App photo)*,  
+    * pluslumiere *(augmente la luminosité)*,  
+    * moinslumiere *(baisse la luminosité)*,  
+    * audio N *(avec N entre 0 et 100 => fixe une valeur au volume)*,  
+    * lumière N *(avec N entre 0 et 100 => fixe une valeur à la luminosité)*,  
+    * autolock|verrou *(activer/désactiver le verrouillage automatique)*,  
+    * darkmode|modesombre *(activer/désactiver le mode sombre)*.  
 
 *Répétition* permet de répéter N fois la commande demandée.  
-Ex : *bash jailed/activator_send.sh* pluslumiere 5* => répète 5 fois la commande *pluslumiere*  
+Ex : *bash jailed/activator_send.sh pluslumiere 5* => répète 5 fois la commande *pluslumiere*  
 
 Appuyez sur le bouton Safari du Dashboard (3 sur la photo ci-dessous)  
 ![Dashboard123](../images/Dashboard123.png "Dashboard123")
@@ -166,25 +170,25 @@ Créer ses notifications personnalisées (*Activator*)
 	puis "Show message alert",  
 	entrer votre "Titre" et "Message personalisé" et "Enregistrer" puis "OK".  
 - Il faut maintenant identifier le message créé pour récupérer son ID.  
-	(méthode 1) Se connecter en SSH à l'appareil et entrer dans l'invite de commande ```activator listeners | grep message.show```.  
-	Si un seul message, récupérer son ID. Si plusieurs messages enregistrés : ```activator get LAMessageListeners```  
+    - Méthode 1 : Se connecter en SSH à l'appareil et entrer dans l'invite de commande ```activator listeners | grep message.show```.  
+      Si un seul message, récupérer son ID. Si plusieurs messages enregistrés : ```activator get LAMessageListeners```  
 
-	(méthode 2) Activer les logs Debug du plugin Jailbreak dans Jeedom.  
-	Saisir ce code dans le champ commande perso sur l'équipement ```activator get LAMessageListeners```,  
-	Sauvegarder, et Tester.  
-	Dans les log générés, récupérer l'ID du/des messages à la fin de la ligne : ```[2020-01-01 12:00:00][DEBUG] : Sortie action perso :```
-	Récupérer la chaine ID qui suit ```...message.show.XXX```  
+    - Méthode 2 : Activer les logs Debug du plugin Jailbreak dans Jeedom.  
+      Saisir ce code dans le champ commande perso sur l'équipement ```activator get LAMessageListeners```,  
+      Sauvegarder, et Tester.  
+      Dans les log générés, récupérer l'ID du/des messages à la fin de la ligne : ```[2020-01-01 12:00:00][DEBUG] : Sortie action perso :```
+      Récupérer la chaine ID qui suit ```...message.show.XXX```  
 
-*[Si votre appareil est verrouillé, pensez à lancer la commande de déverrouillage avant celle-ci, commande unlock](#tocAnchor-1-13-11)*  
+*[Si votre appareil est verrouillé, pensez à lancer la commande de déverrouillage avant celle-ci, commande unlock](#tocAnchor-1-13-13)*  
 
 - Mettre dans le champ commande perso : ```activator send libactivator.message.show.XXX``` en remplaçant XXX par l'ID récupéré.
 
 Prendre une photo (*Activator*)
 -------------------------------
-*[Si votre appareil est verrouillé, pensez à lancer la commande de déverrouillage avant celle-ci, commande unlock](#tocAnchor-1-13-11)*  
+*[Si votre appareil est verrouillé, pensez à lancer la commande de déverrouillage avant celle-ci, commande unlock](#tocAnchor-1-13-13)*  
 
 Depuis la commande perso Camera :
-Selectionnez la méthode désirée : 
+Selectionnez la méthode désirée :  
   * 0 : uniquement pour iOS < 10 (utilise le tweak camshot)
   * 1 : ouvre *libactivator.camera.invoke-shutter*
   * 2 : ouvre *libactivator.shortcut:com.apple.camera:Prendre une photo*
@@ -216,7 +220,23 @@ Nécessite une Application de l'App Store (Periscope HD ou IP Camera Lite ou Liv
 Nécessite un lecteur de flux RTSP ou Snapshot JPG (Plugin Camera, Synology, VLC...)  
   * (Periscode HD) - Filme dès l'ouverture de l'application. (envoi un flux RTSP)  
   * (IP Camera Lite) - Une fois l'app ouverte, cliquer sur "Turn on IP Camera Server" pour filmer. ```stouch touch 10 500``` (envoi un flux RTSP)  
-  * (Karakuri Camera) - Filme dès l'ouverture et présente une image jpg à l'adresse : http://@IP/preview.jpg à chaque GET http://@IP/preview.json => compatible avec le plugin Camera qui peut aussi paramètrer le flux (qualité, intervalle...)  
+  * (LiveReporter) - Filme dès l'ouverture de l'application. (envoi un flux RTSP)  
+  * (Karakuri Camera) - Filme dès l'ouverture et présente une image jpg à l'adresse : http://@IP/preview.jpg à chaque GET http://@IP/preview.json
+    - compatible avec le plugin Camera qui permet ces actions :  
+      - activer la caméra frontale,  
+      - activer la caméra dorsale,  
+      - activer/désactiver l’affichage vidéo sur l’appareil (écran noir),  
+      - activer/désactiver le son,  
+      - régler les fps des snapshot,  
+      - régler le niveau audio,  
+      - régler la qualité d’encodage jpeg,  
+      - régler l’intervalle de temps entre les images,  
+    - et qui permet de récupérer ces informations :  
+      - Date heure,  
+      - dimension des jpeg,  
+      - pourcentage de différence entre les jpg,  
+      - mémoire utilisée,  
+      - batterie restante.  
 
 ![Camera](../images/camera.png "Camera")
 
@@ -224,13 +244,13 @@ Raccourcis (iOS 12/13)
 ---------------------
 1) Sur l'application **Raccourcis**, récupérer le nom du raccourci créé/téléchargé.  
 2) Sur Jeedom, dans la commande perso, entrer ```uiopen "shortcuts://run-shortcut?name=XXX"``` en remplaçant XXX par le nom du raccourci.  
-*[Si votre appareil est verrouillé, pensez à lancer la commande de déverrouillage avant celle-ci, commande unlock](#tocAnchor-1-13-11)*  
+*[Si votre appareil est verrouillé, pensez à lancer la commande de déverrouillage avant celle-ci, commande unlock](#tocAnchor-1-13-13)*  
 
 Text To Speech (iOS 9/10/11/12/13)
 -------------------------
-Faites parler Thomas, Amelie ou Siri en envoyant le message désiré.
-Depuis le dashboard, saisissez le texte que vous souhaitez faire lire à votre appareil (limite de 5 secondes de lecture)
-Depuis Jeedom (scenario, script, autre plugin...), vous pouvez utiliser l'action message pour faire parler votre appareil.
+Faites parler Thomas, Amelie ou n'importe quel voix en envoyant un message texte.  
+Depuis le dashboard, saisissez le texte que vous souhaitez faire lire à votre appareil (limite de 5 secondes de lecture).  
+Depuis Jeedom (scenario, script, autre plugin...), vous pouvez utiliser l'action message pour faire parler votre appareil.  
 
 ![Say](../images/say.png "Say")
 
@@ -238,8 +258,8 @@ Plus d'info sur la commande : [GitHub Say](https://github.com/Flobul/Say)
 
 SMS (9/10/11/12/13)
 -------------------
-Envoyez un SMS depuis votre iPhone uniquement via Jeedom.
-Prérequis : avoir un iPhone (iPad, AppleWatch non fonctionnels), avoir une carte SIM active sur l'iPhone.
+Envoyez un SMS depuis votre iPhone uniquement via Jeedom.  
+Prérequis : avoir un iPhone (iPad, AppleWatch non fonctionnels), avoir une carte SIM active sur l'iPhone.  
 
 ![SMS](../images/sms.png "SMS")
 
@@ -247,52 +267,52 @@ Plus d'info sur la commande : [GitHub SMSme](https://github.com/Flobul/SMSme)
 
 GPS (9/10/11/12/13)
 -------------------
-Récupérer les coordonnées GPS de l'appareil grâce à l'outil gpsloc.
-Autorisez la localisation pour l'App "Localiser mon iPhone" sur votre appareil. 
+Récupérer les coordonnées GPS de l'appareil grâce à l'outil gpsloc.  
+Autorisez la localisation pour l'App "Localiser mon iPhone" sur votre appareil.  
 
 Plus d'info sur la commande : [GitHub GPSLoc](https://github.com/Flobul/GPSLoc)
 
 Notification et Bulletin (9/10/11/12/13) (à vérifier)
 -------------------
-Envoyer une notification personnalisée ou un bulletin sur son appareil.
+Envoyer une notification personnalisée ou un bulletin sur son appareil.  
 
-Sur Jeedom :
-![Notif-Bulletin](../images/notif-bulletin.png "Notif-Bulletin")  
+Sur Jeedom :  
+![Notif-Bulletin](../images/notif-bulletin.png "Notif-Bulletin" )  
 
-Notification sur l'appareil :
-![Notification](../images/notif.png "Notification")  
+Notification sur l'appareil :  
+<img src="../images/notif.png" width="200">
 
-Bulletin sur l'appareil :
-![Bulletin](../images/bulletin.png "Bulletin")  
+Bulletin sur l'appareil :  
+<img src="../images/bulletin.png" width="200">
 
 Plus d'info sur la commande : [GitHub Publication](https://github.com/Flobul/PublicationMe)
 Plus d'info sur la commande : [GitHub Bulletin](https://github.com/Flobul/NotifyMe)
 
 Liste des App
 -------------------
-Cette commande affiche dans un menu déroulant la liste actuelle des applications installées sur l'appareil.
-On peut alors la selectionner puis enregistrer l'équipement, afin de pouvoir executer la commande de lancement de cette App.
+Cette commande affiche dans un menu déroulant la liste actuelle des applications installées sur l'appareil.  
+On peut alors la selectionner puis enregistrer l'équipement, afin de pouvoir executer la commande de lancement de cette App.  
 
 ![Liste des App](../images/applist.png "Liste des App")
 
 Gestion du cron commandes
 -------------------
-Ce cron permet de créer un cron directement sur l'appareil.
-Et d'envoyer des informations listées selon des intervalles définis.
+Ce cron permet de créer un cron directement sur l'appareil.  
+Et d'envoyer des informations listées selon des intervalles définis.  
 
-Attention aux intervalles rapprochés qui risquent de consommer la batterie de votre appareil.
+Attention aux intervalles rapprochés qui risquent de consommer la batterie de votre appareil.  
 
 ![Cron](../images/croncmd.png "Cron")
 
-Sélectionnez une ou plusieurs commandes dans la liste, choisissez l'intervalle de temps et cliquez sur créer.
-Le cron va être créé sur l'appareil et être executer. En rechargeant la page, son statut va passer à OK.
-- Vous pouvez alors le stopper : cliquez sur le carré blanc sur fond rouge stop son execution, il suffit de cliquer sur le triangle blanc sur fond vert pour le relancer (inutile de le recréer à zero),
-- récupérer les log : cliquez sur le bouton Log va télécharger les log et les présenter dans la page Configuration du plugin (\_cron à la fin du nom),
-- laissez Jeedom gérer la gestion automatique : si vous activer la fonction, le plugin Jailbreak va vérifier chaque jour que le cron est executer et le lancer dans le cas contraire.
+Sélectionnez une ou plusieurs commandes dans la liste, choisissez l'intervalle de temps et cliquez sur créer.  
+Le cron va être créé sur l'appareil et être executer. En rechargeant la page, son statut va passer à OK.  
+- Vous pouvez alors le stopper : cliquez sur le carré blanc sur fond rouge stop son execution, il suffit de cliquer sur le triangle blanc sur fond vert pour le relancer (inutile de le recréer à zero),  
+- récupérer les log : cliquez sur le bouton Log va télécharger les log et les présenter dans la page Configuration du plugin (\_cron à la fin du nom),  
+- laissez Jeedom gérer la gestion automatique : si vous activer la fonction, le plugin Jailbreak va vérifier chaque jour que le cron est executer et le lancer dans le cas contraire.  
 
 ASTUCE pour executer la commande déverrouillage avant une commande
 ------------------------------------------------------------------
-Dans les réglages de la commande que l'on veut lancer (ouvrir Safari, ouvrir une app), ajoutez une *action avant d'execution la commande*, et cherchez la commande de deverrouillage (unlock) puis sauvegardez.
+Dans les réglages de la commande que l'on veut lancer (ouvrir Safari, ouvrir une app), ajoutez une *action avant d'execution la commande*, et cherchez la commande de deverrouillage (unlock) puis sauvegardez.  
 
 ![Unlock](../images/unlock.png "Unlock")
 

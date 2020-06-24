@@ -280,10 +280,10 @@ Sur Jeedom :
 ![Notif-Bulletin](../images/notif-bulletin.png "Notif-Bulletin" )  
 
 Notification sur l'appareil :  
-<img src="../images/notif.png" width="200">
+<img src="../images/notif.png" width="300">
 
 Bulletin sur l'appareil :  
-<img src="../images/bulletin.png" width="200">
+<img src="../images/bulletin.png" width="300">
 
 Plus d'info sur la commande : [GitHub Publication](https://github.com/Flobul/PublicationMe)
 Plus d'info sur la commande : [GitHub Bulletin](https://github.com/Flobul/NotifyMe)

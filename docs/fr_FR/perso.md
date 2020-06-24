@@ -50,15 +50,17 @@ Exemple de commandes et la valeur de la commande sur Jeedom :
 **ACTION : à partir des scripts existants**
 -----------------------
 Le script activator_send.sh :
-- commande à saisir dans le champ : *bash jailed/activator_send.sh XXX*
-- arguments de la commande (remplacer XXX par...) : un des paramètres listés ici : *[Paramètres](#tocAnchor-1-13-1)* => *low-power/home/respring/sleep/location/rotation/avion/verrou/modesombre/moinsfort/plusfort/audio 100/lumiere 100/screenshot/photo/pluslumiere/moinslumiere*
-- argument optionnel de la commande :  un chiffre de de 1 à 10 (répétition de la commande)
-
+- commande à saisir dans le champ : *bash jailed/activator_send.sh XXX*  
+- arguments de la commande (remplacer XXX par...) : un des paramètres listés ici : *[Paramètres](#tocAnchor-1-13-1)* => *low-power/home/respring/sleep/location/rotation/avion/verrou/modesombre/moinsfort/plusfort/audio 100/lumiere 100/screenshot/photo/pluslumiere/moinslumiere*  
+- argument optionnel de la commande :  un chiffre de de 1 à 10 (répétition de la commande)  
 
 Les commandes manuelles :
-- Activator : *activator send* *listeners*
-avec *listeners* : une des lignes listées dans le champ texte de Menu Installation > Equipement > Activator Listeners.
-Cela permet d'ouvrir toutes les applications disponibles sur l\'équipement ou d'éxecuter des actions (activer darkmode, couper bluetooth, couper wifi...)
-
-
+- Activator : *activator send* *listeners*, avec *listeners* : une des lignes listées dans le champ texte de Menu Installation > Equipement > Activator Listeners.  
+  Cela permet d'ouvrir toutes les applications disponibles sur l\'équipement ou d'éxecuter des actions (activer darkmode, couper bluetooth, couper wifi...)  
+- FlipSwitch : *switch toggle* *XXX*, avec *XXX* : une des lignes listées dans la commande *switch list*.  
+  Cela permet d'executer des actions du style (activer darkmode, couper bluetooth, couper wifi...)  
+- SimulateTouch : *stouch touch 200 100*  
+  Cela permet de simuler un clic/pointer/swiper sur l'écran.  
+- AutoTouch : ...  
+  Cela permet de configurer et d'enregistrer des gestes réalisés sur l'écran.  
 

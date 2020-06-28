@@ -3,6 +3,22 @@ Changelog
 
 Liste des versions du plugin Jailbreak.
 
+Version 1.26 (28/06/2020) beta
+-------------------------
+* Ajout de la suppression journalière des photos stockées dans Jeedom
+* Ajout des commandes de base (info) :
+    * Amperage chargeur et Puissance chargeur
+    * Consommation instantanée
+    * Santé batterie (en pourc.)
+    * Capacité batterie (en pourc.)
+    * Temps estimé avant charge/décharge complète
+    * Capacité initiale
+    * Capacité maximale
+    * Capacité actuelle
+* Remise en forme de l'affiche dashboard de Batterie
+* Allègement des commandes envoyées aux appereils (30% plus rapide)
+* Ajout d'un input Unité pour les commandes info non nulles
+
 Version 1.25 (20/06/2020) beta
 -------------------------
 - Ajout cron commandes (tab cron)

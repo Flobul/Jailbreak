@@ -3,6 +3,11 @@ Changelog
 
 Liste des versions du plugin Jailbreak.
 
+Version 1.27 (26/08/2020)
+-------------------------
+* Fusion beta dans stable
+* Correction création cron
+
 Version 1.26 (28/06/2020) beta
 -------------------------
 * Ajout de la suppression journalière des photos stockées dans Jeedom

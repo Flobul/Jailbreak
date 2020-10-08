@@ -3,6 +3,16 @@ Changelog
 
 Liste des versions du plugin Jailbreak.
 
+Version 1.28 (05/10/2020) beta
+-------------------------
+* (beta) Correction requêtes applist et localmusic 
+* (beta) Ajout commandes refresh (rafrazichit les infos), play (lit un fichier audio), playurl (lit un lien http de fichier audio) et stop (arrête la lecture)
+* (beta) Remplacement sur le Dashboard de la commande reboot par refresh 
+* (beta) Ajout champ input pour commande playurl sur le Dashboard
+* (beta) Corrections et améliorations
+* (beta) Correction cron apt script
+* (beta) Correction script de création cron
+
 Version 1.27 (26/08/2020)
 -------------------------
 * Fusion beta dans stable
